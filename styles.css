@@ -184,25 +184,3 @@ h2, h3 {
 #contact a:hover {
     color: darkblue;
 }
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero .btn {
-        padding: 8px 16px;
-    }
-
-    .project-card {
-        width: 90%; /* Take up most of the screen on mobile */
-    }
-
-    .section {
-        padding: 40px 10px;
-    }
-}
