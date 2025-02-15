@@ -215,6 +215,51 @@ h2, h3 {
 * {
     box-sizing: border-box;
 }
+/* Section for Languages */
+#languages {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#languages h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Container for the language logos */
+.language-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Style each logo */
+.language-logo {
+    text-align: center;
+}
+
+.language-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.language-logo p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.language-logo img:hover {
+    transform: scale(1.1); /* Slight zoom effect when hovering over the logos */
+}
+
+
 /* Chatbot Button */
 .chatbot-icon {
     position: fixed;
