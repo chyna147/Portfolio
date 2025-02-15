@@ -253,12 +253,34 @@ h2, h3 {
     font-size: 1rem;
     font-weight: bold;
     color: #333;
+
 }
 
 .language-logo img:hover {
-    transform: scale(1.1); /* Slight zoom effect when hovering over the logos */
+    transform: scale(1.1); 
 }
-
+#languages {
+    background-color: white; 
+    padding: 60px 20px;
+    text-align: center;
+}
+/* Responsive navbar for small screens */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;/* Stack nav items vertically on smaller screens */
+        align-items: center;
+    }
+}
+    .nav-item {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    /* Mobile responsive styles */
+@media screen and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
 
 /* Chatbot Button */
 .chatbot-icon {

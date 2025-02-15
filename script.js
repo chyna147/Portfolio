@@ -13,7 +13,7 @@ function sendMessage() {
 
         // Simulate a bot response after a short delay
         setTimeout(() => {
-            displayMessage(getBotResponse(), 'bot');
+            displayMessage(getBotResponse(userInput), 'bot');
         }, 1000);
     }
 }
@@ -26,15 +26,32 @@ function displayMessage(message, sender) {
     document.getElementById('chatMessages').appendChild(messageContainer);
 }
 
-// Sample bot responses
-function getBotResponse() {
-    const responses = [
-        "Hello! How can I assist you today?",
-        "I'm here to help you with anything on this portfolio.",
-        "Feel free to ask about my projects, skills, or certifications!",
-        "Thank you for visiting my portfolio!"
-    ];
-    return responses[Math.floor(Math.random() * responses.length)];
+// Updated bot response function based on user input
+function getBotResponse(userInput) {
+    const lowerCaseInput = userInput.toLowerCase();
+
+    // Check for specific keywords in the user input and return an appropriate response
+    if (lowerCaseInput.includes('programming languages') || lowerCaseInput.includes('languages')) {
+        return "I am familiar with HTML, CSS, JavaScript, and React.js. These are the main languages I use to build web applications.";
+    } else if (lowerCaseInput.includes('skills') || lowerCaseInput.includes('what skills')) {
+        return "My skills include software development and  secure coding practices. My soft skills are good communication skills ,time management ,critical thinking , adaptability and attention to details";
+    } else if (lowerCaseInput.includes('projects') || lowerCaseInput.includes('work')) {
+        return "I have worked on various projects, including a hobby project about wine tasting. You can check out more of my work in the 'Projects' section of my portfolio!";
+    } else if (lowerCaseInput.includes('certificates') || lowerCaseInput.includes('certification')) {
+        return "I hold certificates in web development and cybersecurity. You can view my certificates in the 'Certificates' section of my portfolio.";
+    } else if (lowerCaseInput.includes('experience') || lowerCaseInput.includes('work experience') || lowerCaseInput.includes('background')) {
+        return "I have experience as a Mobile Digital Literacy Ambassador for NEMISA, a Cybersecurity learnership at IRG, and I am currently an intern for Software Development at Capaciti.";
+    } else {
+        // Default response if no specific keyword is found
+        const responses = [
+            "Hello! How can I assist you today?",
+            "I'm here to help you with anything on this portfolio.",
+            "Feel free to ask about my projects, skills, experience, or certifications!",
+            "Thank you for visiting my portfolio!"
+        ];
+        return responses[Math.floor(Math.random() * responses.length)];
+    }
 }
+
 
 
