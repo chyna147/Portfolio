@@ -86,6 +86,21 @@
                 <i class="fab fa-github"></i> GitHub
                 </a>
         </section>
+        <!-- Chatbot Icon Button -->
+    <div id="chatbot" class="chatbot-icon" onclick="toggleChatbot()">
+        💬
+    </div>
+
+    <!-- Chat Window -->
+    <div id="chatWindow" class="chat-window">
+        <div class="chat-header">
+            <span>Chat with us!</span>
+            <span class="close" onclick="toggleChatbot()">X</span>
+        </div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <input id="userInput" type="text" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
         <footer>
             <p>&copy; 2025 Keratilwe Fortunate Mathole. All rights reserved.</p>
         </footer>
