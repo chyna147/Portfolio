@@ -38,24 +38,33 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero" id="home">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Building the future, one line of code at a time.</p>
-            <a href="#about" class="btn btn-primary">Learn More About Me</a>
-        </div>
+    <header class="hero" id="home" style="width: 100%; display: flex; justify-content: center; align-items: center; padding: 20px 0;">
+        <section class="about-container section" id="about" style="display: flex; justify-content: space-between; width: 80%; max-width: 1200px;">
+            <div class="about-text" style="flex: 1; padding-right: 20px;">
+                <h2 style="font-size: 2em; font-weight: bold; margin-bottom: 10px;">About Me</h2>
+                <p style="font-size: 1.1em; line-height: 1.6;">
+                    <em>
+                        HI, I am a committed software developer with a strong foundation in web development (HTML, CSS, JavaScript, ReactJs) and a specific interest in Cyber Security.<br>
+                        My cybersecurity background has enabled me to further understand the necessity of integrating security at every stage of development, from design to deployment.<br>
+                        As a continuous learner, I make a conscious effort to stay updated on the latest development frameworks, security trends, and technologies. <br>
+                        My cybersecurity background also enables me to write software with best security principles in mind so that the data and systems of users are protected from potential attacks.<br>
+                        I am excited to collaborate with creative teams where I can utilize my skills to create not just functional, but also secure, solutions to real-world issues.<br>
+                    </em>
+                </p>
+                <br><br>
+                <a href="./Asset/2024 Candidate CV V2 (1) KERA (1).pdf" download="Keratilwe_Mathole_CV.pdf" class="download-btn" 
+                    style="text-decoration: none; padding: 10px 20px; background-color: #4CAF50; color: white; font-size: 1.1em; border-radius: 5px; display: inline-block;">
+                    📄 Download My CV
+                </a>
+            </div>
+            <div class="about-image" style="flex: 1; text-align: right;">
+                <img src="Asset/original-AF8E2424-9A86-4F53-87C9-D4E6265FF00C.jpeg" alt="Keratilwe Mathole" class="about-img" style="max-width: 100%; height: auto; border-radius: 10px;">
+            </div>
+        </section>
     </header>
+    
 
-    <section class="text-center section" id="about">
-        <h2>About Me</h2>
-        <p> <em>HI , I  am a committed software developer with a strong foundation in web development (HTML, CSS, JavaScript, ReactJs) and a specific interest in Cyber Security. 
-            My cybersecurity background has enabled me to further understand the necessity of integrating security at every stage of development, from design to deployment.
-             As a continuous learner, I make a conscious effort to stay updated on the latest development frameworks, security trends, and technologies. 
-             My cybersecurity background also enables me to write software with best security principles in mind so that the data and systems of users are protected from potential attacks.
-            I am excited to collaborate with creative teams where I can utilize my skills to create not just functional, but also secure, solutions to real-world issues.
-        </em>
-        </p>
-    </section>
+    
 
     <section class="text-center section" id="languages">
         <h3>Programming languages</h3>
@@ -88,64 +97,97 @@
                 <a href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/002/443/041/original/Project_%28hobby%29.html?1729459650" target="_blank" class="btn btn-primary">View Project</a>
             </div>
         </section>
-        <section class="text-center section" id="certificates">
-            <h5>Certificates</h5>
-            <div class="container">
-                <div class="certificate-card">
-                    <h4>Certificate 1: Web Development</h4>
-                    <p><em>Issued by: [She codes]</em></p>
-                    <a href="Asset/IBMDesign20250215-25-sp1nlx.pdf" target="_blank" class="btn btn-primary">View Certificate</a>
-                </div>
-            </div>
-            </section>
-        <section class="text-center section" id="contact">
-            <h6>Contact Me</h6>
-            <p>Phone: +27672691814</p>
-            <p>Email: <a href="mailto:fortunatekeratilwechynq@gmail.com" style="color: rgb(45, 0, 128);">fortunatekeratilwechynq@gmail.com</a></p>
-            <a href="https://www.linkedin.com/in/keratilwe-fortunate-mathole-674858336/" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <br>
-            <a href="https://github.com/chyna147" target="_blank" class="social-icon">
-                <i class="fab fa-github"></i> GitHub
-                </a>
-                <!-- Contact Form -->
-    <form action="send-email.php" method="POST">
-        <div>
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" required></textarea>
-        </div>
-        <div>
-            <button type="submit">Send Message</button>
-        </div>
-    </form>
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates">
+    <h2>My Certificates</h2>
+    <div class="certificate-grid">
+      <div class="certificate-item">
+        <img src="Asset/IMG_5006.jpeg" alt="">
+        <h3>Introduction to AI</h3>
+        <p>Issued by: SheCodes</p>
+        <a href="/Certificates/SheCodes  Intro to AI.pdf" download>Download Certificate</a>
+      </div>
+      <div class="certificate-item">
+        <img src="Asset/IMG_5007.jpeg" alt="Certificate 2">
+        <h3>Introduction to web development  </h3>
+        <p>Issued by: SheCodes</p>
+        <a href="/Certificates/SheCodes  Intro to web  development.pdf" download>Download Certificate</a>
+      </div>
+      <div class="certificate-item">
+        <img src="Asset/Image.jpeg" alt="Certificate 3">
+        <h3>Generative AI: Introduction to coding</h3>
+        <p>Issued by:SheCodes </p>
+        <a href="/Certificates/SheCodes Intro to coding.pdf" download>Download Certificate</a>
+    </div>
+    <div class="certificate-item">
+        <img src="Asset/IMG_5009.jpeg" alt="Certificate 4">
+        <h3>Generative AI: Introduction to cybersecurity awareness </h3>
+        <p>Issued by: HP life</p>
+        
+        <a href="/Certificates/SheCodes intro to cybersecurity awareness.pdf" download>Download Certificate</a>
+    
+        
+  </section>
+  
+  
+  
+  
+      <section class="text-center section" id="contact">
+    <h6>Contact Me</h6>
+    <p>Phone: +27672691814</p>
+    <p>Email: <a href="mailto:fortunatekeratilwechynq@gmail.com" style="color: rgb(45, 0, 128);">fortunatekeratilwechynq@gmail.com</a></p>
+    <a href="https://www.linkedin.com/in/keratilwe-fortunate-mathole-674858336/" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <br>
+    <a href="https://github.com/chyna147" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i> GitHub
+        </a>
+        <br>
+        <br>
+        <!-- Contact Form -->
+<form action="send-email" method="POST">
+<div>
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+</div>
+<div>
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required>
+</div>
+<div>
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" required></textarea>
+</div>
+<div>
+    <button type="submit">Send Message</button>
+</div>
+</form>
 </section>
-        </section>
-        <!-- Chatbot Icon Button -->
-    <div id="chatbot" class="chatbot-icon" onclick="toggleChatbot()">
-        💬
-    </div>
+</section>
+<!-- Chatbot Icon Button -->
+<div id="chatbot" class="chatbot-icon" onclick="toggleChatbot()">
+💬
+</div>
 
-    <!-- Chat Window -->
-    <div id="chatWindow" class="chat-window">
-        <div class="chat-header">
-            <span>Chat with us!</span>
-            <span class="close" onclick="toggleChatbot()">X</span>
-        </div>
-        <div id="chatMessages" class="chat-messages"></div>
-        <input id="userInput" type="text" placeholder="Type your message..." />
-        <button onclick="sendMessage()">Send</button>
-    </div>
-        <footer>
-            <p>&copy; 2025 Keratilwe Fortunate Mathole. All rights reserved.</p>
-        </footer>
+<!-- Chat Window -->
+<div id="chatWindow" class="chat-window">
+<div class="chat-header">
+    <span>Chat with us!</span>
+    <span class="close" onclick="toggleChatbot()">X</span>
+</div>
+<div id="chatMessages" class="chat-messages"></div>
+<input id="userInput" type="text" placeholder="Type your message..." />
+<button onclick="sendMessage()">Send</button>
+</div>
+<footer>
+    <p>&copy; 2025 Keratilwe Fortunate Mathole. All rights reserved.</p>
+</footer>
 </body>
 </html>
+
+  
+  
+  
+  
+        
