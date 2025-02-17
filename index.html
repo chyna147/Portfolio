@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="javascript" href="script.js">
-</head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Keratilwe Fortunate Mathole</a>
+            <a class="navbar-brand" href="#">Keratilwe Fortunate Mathole </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,15 +48,36 @@
 
     <section class="text-center section" id="about">
         <h2>About Me</h2>
-        <p> <em>Highly motivated and ambitious Software Developer, driven to deliver top-notch solutions and continuously enhance my skills.
-            Im a strong communicator who thrives in team environments .Im always excited to take on new challenges and collaborate with talented teams to 
-            innovate software.
+        <p> <em>HI am a committed software developer with a strong foundation in web development (HTML, CSS, JavaScript, C#) and a specific interest in Cyber Security. Being a Cyber Security student on a learnership, I approach software development differently, understanding how critical secure coding practices and data protection are. My cybersecurity background has enabled me to further understand the necessity of integrating security at every stage of development, from design to deployment. As a continuous learner, I make a conscious effort to stay updated on the latest development frameworks, security trends, and technologies. My cybersecurity background also enables me to write software with best security principles in mind so that the data and systems of users are protected from potential attacks.
+            I am excited to collaborate with creative teams where I can utilize my skills to create not just functional, but also secure, solutions to real-world issues.
         </em>
         </p>
     </section>
 
+    <section class="text-center section" id="languages">
+        <h3>Programming languages</h3>
+        <div class="language-logos">
+            <div class="language-logo">
+                <img src="Asset/IMG_4979 (1).jpeg" alt="HTML" class="logo">
+                <p>HTML</p>
+            </div>
+            <div class="language-logo">
+                <img src="Asset/IMG_4981.jpeg" alt="CSS" class="logo">
+                <p>CSS</p>
+            </div>
+            <div class="language-logo">
+                <img src="Asset/IMG_4984.jpeg" alt="JavaScript" class="logo">
+                <p>JavaScript</p>
+            </div>
+            <div class="language-logo">
+                <img src="Asset/IMG_4983.jpeg" alt="React Js" class="logo">
+                <p>React Js</p>
+            </div>
+        </div>
+    </section>
+    
     <section class="text-center section" id="projects">
-        <h2>Projects</h2>
+        <h4>Projects</h4>
         <div class="container">
             <div class="project-card">
                 <h4>My Hobby Project</h4>
@@ -66,15 +85,18 @@
                 <a href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/002/443/041/original/Project_%28hobby%29.html?1729459650" target="_blank" class="btn btn-primary">View Project</a>
             </div>
         </section>
-        <section class="text-center section" id="Certificates">
-
-
-
-            
-        </section>
-
+        <section class="text-center section" id="certificates">
+            <h5>Certificates</h5>
+            <div class="container">
+                <div class="certificate-card">
+                    <h4>Certificate 1: Web Development</h4>
+                    <p><em>Issued by: [She codes]</em></p>
+                    <a href="Asset/IBMDesign20250215-25-sp1nlx.pdf" target="_blank" class="btn btn-primary">View Certificate</a>
+                </div>
+            </div>
+            </section>
         <section class="text-center section" id="contact">
-            <h4>Contact Me</h4>
+            <h6>Contact Me</h6>
             <p>Phone: +27672691814</p>
             <p>Email: <a href="mailto:fortunatekeratilwechynq@gmail.com" style="color: rgb(45, 0, 128);">fortunatekeratilwechynq@gmail.com</a></p>
             <a href="https://www.linkedin.com/in/keratilwe-fortunate-mathole-674858336/" target="_blank" class="social-icon">
@@ -85,5 +107,23 @@
                 <i class="fab fa-github"></i> GitHub
                 </a>
         </section>
+        <!-- Chatbot Icon Button -->
+    <div id="chatbot" class="chatbot-icon" onclick="toggleChatbot()">
+        💬
+    </div>
+
+    <!-- Chat Window -->
+    <div id="chatWindow" class="chat-window">
+        <div class="chat-header">
+            <span>Chat with us!</span>
+            <span class="close" onclick="toggleChatbot()">X</span>
+        </div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <input id="userInput" type="text" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+        <footer>
+            <p>&copy; 2025 Keratilwe Fortunate Mathole. All rights reserved.</p>
+        </footer>
 </body>
 </html>
