@@ -36,9 +36,9 @@ function getBotResponse(userInput) {
     } else if (lowerCaseInput.includes('skills') || lowerCaseInput.includes('what skills')) {
         return "My skills include software development and  secure coding practices. My soft skills are good communication skills ,time management ,critical thinking , adaptability and attention to details";
     } else if (lowerCaseInput.includes('projects') || lowerCaseInput.includes('work')) {
-        return "I have worked on various projects, including a hobby project about wine tasting. You can check out more of my work in the 'Projects' section of my portfolio!";
+        return "I have worked on various projects, including a hobby project about wine tasting and english poem generator. You can check out more of my work in the 'Projects' section of my portfolio!";
     } else if (lowerCaseInput.includes('certificates') || lowerCaseInput.includes('certification')) {
-        return "I hold certificates in web development and cybersecurity. You can view my certificates in the 'Certificates' section of my portfolio.";
+        return "I hold certificates in intro to web development  , cybersecurity , Artificial intelligence essemcials V2 , chatbot building essentials , Generative AI: prompt engineering ,introduction to artificial intelligence , intro to coding , introduction to cybersecurity cisco , Cybersecurity awareness HP. You can view my certificates in the 'Certificates' section of my portfolio.";
     } else if (lowerCaseInput.includes('experience') || lowerCaseInput.includes('work experience') || lowerCaseInput.includes('background')) {
         return "I have experience as a Mobile Digital Literacy Ambassador for NEMISA, a Cybersecurity learnership at IRG, and I am currently an intern for Software Development at Capaciti.";
     } else {
