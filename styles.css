@@ -641,3 +641,102 @@ img {
         padding: 0.4rem;
     }
 }
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .certificate-grid {
+        grid-template-columns: 1fr; /* Stack the items vertically */
+    }
+}
+@media (max-width: 768px) {
+    form {
+        width: 100%;  /* Make form take full width on smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .language-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .chatbot-icon {
+        bottom: 20px; /* Adjust position for mobile screens */
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Adjust h1 size for mobile */
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Navbar for small screens */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Hero section font size */
+@media screen and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Adjust section padding */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 10px;
+    }
+}
+
+/* Adjust certificate grid layout */
+@media (max-width: 768px) {
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Language section layout */
+@media (max-width: 768px) {
+    .language-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
